@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | 7 Wonders of the world </title>
+    <link rel="icon" href="./img/logo.png">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header id="top">
+
+        <video autoplay loop class="video-background" muted plays-inline>
+            <source src="./videos/Wonders.mp4" type="video/mp4">
+        </video>
+
+        <div class="nav">
+            <img src="./img/logo.png" class="logo" alt="logo">
+
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./great_pyramid.html">Great Pyramid</a></li>
+                <li><a href="./great_pyramid.html">Great Wall</a></li>
+                <li><a href="./petra.html">Petra</a></li>
+                <li><a href="./colosseum.html">Colosseum</a></li>
+                <li><a href="./chichen_itza.html">Chich&eacute;n</a></li>
+                <li><a href="./machu_picchu.html">Machu</a></li>
+                <li><a href="./taj_mahal.html">Taj</a></li>
+                <li><a href="./christ_redeemer.html">Redeemer</a></li>
+            </ul>
+
+        </div>
+
+        <div class="theme">
+            <h1>NEW 7 WONDERS OF THE WORLD</h1>
+
+            <!-- <a href="#" class="btn btn1">Feedback</a> -->
+            <a href="#explore" class="btn btn2">Explore</a>
+
+        </div>
+
+    </header>
+
+    <div class="main">
+
+        <div id="explore">
+
+            <div class="description">
+                <h2><span><a href="JavaScript:void(0)">Wonders</a></span></h2>
+                <div class="description-text">
+                    <p>In 2000 a Swiss foundation launched a campaign to determine the New Seven Wonders of the World. Given that the original Seven Wonders list was compiled in the 2nd century BCE—and that only one entrant is still standing (the Pyramids of Giza)—it seemed time for an update. And people around the world apparently agreed, as more than 100 million votes were cast on the Internet or by text messaging. The final results, which were announced in 2007, were met with cheers as well as some jeers—a number of prominent contenders, such as Athens’s Acropolis, failed to make the cut. </p>
+                    <p>Check it out:</p>
+                    <ul class="bulleted-list">
+                        <li>&bull; The Great Pyramid of Giza in Egypt - (Around 2560 BCE.)</li>
+                        <li>&bull; The Great Wall of China - (Built from 7th Century BC to 1878.)</li>
+                        <li>&bull; Petra in Jordan- (3rd century BC.)</li>
+                        <li>&bull; The Colosseum in Rome, Italy - (70 AD.)</li>
+                        <li>&bull; Chich&eacute; Itz&aacute; in Yucatan Peninsula - (Built from 600 AD to 1221.)</li>
+                        <li>&bull; Machu Picchu in Peru - (Built around 1450-1460.)</li>
+                        <li>&bull; Taj Mahal in India - (Built in 1632.)</li>
+                        <li>&bull; Christ the redemeer - (Built from 4 April 1922 to  12 October 1931)</li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="gallery-container">
+            <div class="slider-show-container">
+                <div id="playPauseBtn" onclick="playPauseSlides()"></div>
+
+                <div class="left-arrow" onclick="plusSlides(-1)"><span class="arrow arrow-left"></span></div>
+                <div class="right-arrow" onclick="plusSlides(1)"><span class="arrow arrow-right"></span></div>
+
+                <div class="captionHolder">
+                    <p class="captionText"></p>
+                </div>
+
+                <div class="imageHolder">
+                    <img src="./img/wonders.jpg" alt="Wonders">
+                    <p class="captionText">New 7 Wonders</p>
+                </div>
+
+                <div class="imageHolder">
+                    <img src="./img/slide1.jpg" alt="The Great Pyramid of Giza">
+                    <p class="captionText">The Great Pyramid of Giza</p>
+                </div>
+
+                <div class="imageHolder">
+                    <img src="./img/slide2.jpg" alt="The Great Wall of China">
+                    <p class="captionText">The Great Wall of China</p>
+                </div>
+
+                <div class="imageHolder">
+                    <img src="./img/slide3.jpg" alt="Petra">
+                    <p class="captionText">Petra</p>
+                </div>
+
+                <div class="imageHolder">
+                    <img src="./img/slide4.jpg" alt="The Colosseum">
+                    <p class="captionText">The Colosseum</p>
+                </div>
+
+                <div class="imageHolder">
+                    <img src="./img/slide5.jpg" alt="Chich&eacute; Itz&aacute;">
+                    <p class="captionText">Chich&eacute; Itz&aacute;</p>
+                </div>
+
+                <div class="imageHolder">
+                    <img src="./img/slide6.jpg" alt="Machu Picchu">
+                    <p class="captionText">Machu Picchu</p>
+                </div>
+
+                <div class="imageHolder">
+                    <img src="./img/slide7.jpg" alt="Taj Mahal">
+                    <p class="captionText">Taj Mahal</p>
+                </div>
+
+                <div class="imageHolder">
+                    <img src="./img/slide8.jpg" alt="Christ the Redeemer">
+                    <p class="captionText">Christ the Redeemer</p>
+                </div>
+
+            </div>
+            <div id="dotsContainer"></div>
+        </div>
+
+        
+        <div class="section-heading">
+            <h2></h2>
+            <div class="section-border"></div>
+        </div>
+
+        <div class="feedback">
+            <div class="feedback-container">
+                <h3>Say something &#128578;</h3>
+                <form method="POST" action="#">
+                    <div class="input-field">
+                        <input type="text" id="fname" required autocomplete="off">
+                        <label>First Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="surname" required autocomplete="off">
+                        <label>Surname</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="email" required autocomplete="off">
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field date">
+                        <input type="date" id="date" required autocomplete="off">
+                        <!-- <label>Visit Date</label> -->
+                    </div>
+                    <div class="input-field">
+                        <textarea rows="5" required id="memories"></textarea>
+                        <label>Special Memories during your visit</label>
+                    </div>
+                    <input type="submit" onclick="getFeedback()" value="Send Feedback" class="submit-btn">
+                </form>
+            </div>
+        </div>
+
+        <div class="back-to-top">
+            <a href="#top">Back to top</a>
+        </div>
+
+    </div>
+
+
+    <script src="./js/gallery.js"></script>
+    <script src="./js/main.js"></script>
+
+    
+
+</body>
+
+</html>
